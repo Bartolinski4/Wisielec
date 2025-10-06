@@ -1,4 +1,59 @@
-let haslo = "Codziennie rano wstaje do pracy";
+let hasla = [
+  'kot na dachu',
+  'pies szczeka na listonosza',
+  'zielony ogórek',
+  'lubię pierogi ruskie',
+  'jutro będzie padać',
+  'idziemy na spacer do lasu',
+  'szkoła już się zaczęła',
+  'mama piecze ciasto',
+  'komputer się zawiesił',
+  'smaczna kawa o poranku',
+  'świeci słońce',
+  'uwielbiam czekoladę',
+  'czytasz fajną książkę',
+  'samolot leci wysoko',
+  'złota rybka w akwarium',
+  'śmieszny kotek na filmiku',
+  'wieczorem oglądam serial',
+  'gram w gry komputerowe',
+  'czas na drzemkę',
+  'marzę o wakacjach',
+  'miasto nigdy nie śpi',
+  'rower stoi w garażu',
+  'dziadek gra w szachy',
+  'babcia robi naleśniki',
+  'zimą lubię jeździć na sankach',
+  'lubię zapach deszczu',
+  'kubek gorącej herbaty',
+  'w domu jest przytulnie',
+  'kto rano wstaje temu pan bóg daje',
+  'żaba skacze po trawie',
+  'telewizor jest za głośno',
+  'dzisiaj jest mój szczęśliwy dzień',
+  'słońce zachodzi nad jeziorem',
+  'piesek merda ogonem',
+  'kot śpi na fotelu',
+  'kocham swoją rodzinę',
+  'śnieg spada z nieba',
+  'idziemy na pizzę',
+  'czas na odpoczynek',
+  'słodki zapach wanilii',
+  'dzieci biegają po parku',
+  'samochód nie chce zapalić',
+  'to jest tajemnica',
+  'zjadłem całe ciasto',
+  'nie mam pojęcia',
+  'gramy w planszówki',
+  'zielona herbata smakuje najlepiej',
+  'dzisiaj jest poniedziałek',
+  'jestem bardzo głodny',
+  'życie to przygoda'
+];
+
+
+const losowanieHasla = Math.floor(Math.random() * hasla.length);
+let haslo = hasla[losowanieHasla];
 haslo = haslo.toUpperCase();
 
 let dlugosc = haslo.length;
@@ -80,4 +135,5 @@ function sprawdz(nr) {
     if (haslo == haslo1) {
         document.getElementById("alfabet").innerHTML = '<span class="wygrana">Wygrałeś!</span><br>Gratulacje udało Ci się zgadnąć hasło.<br><br><span class="restart" onclick="location.reload()">Jeszcze raz</span>'
     }
+
 }
