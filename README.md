@@ -29,3 +29,6 @@ Projekt został zbudowany przy użyciu czystych technologii webowych:
 1. Pobierz repozytorium:
    ```bash
    git clone https://github.com/Bartolinski4/wisielec.git
+   ```
+2. Otwórz plik index.html w przeglądarce.
+3. Gotowe! 🎉
